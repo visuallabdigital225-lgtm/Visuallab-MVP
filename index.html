@@ -1,62 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edilma Tavares | VisualLab</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: #0a0a0a;
-            color: #fff;
-            text-align: center;
-            padding: 60px 20px;
-            margin: 0;
-        }
-        .foto-perfil {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #8b5cf6;
-            margin-bottom: 20px;
-        }
-        h1 {
-            font-size: 42px;
-            color: #fff;
-            margin: 10px 0;
-        }
-        .cargo {
-            font-size: 20px;
-            color: #8b5cf6;
-            font-weight: 600;
-            margin-bottom: 16px;
-        }
-        p { 
-            font-size: 18px; 
-            color: #a1a1aa; 
-            max-width: 500px;
-            margin: 0 auto 30px auto;
-            line-height: 1.6;
-        }
-        .btn {
-            display: inline-block;
-            background: #8b5cf6;
-            color: white;
-            padding: 16px 40px;
-            border-radius: 8px;
-            text-decoration: none;
-            margin-top: 20px;
-            font-weight: 600;
-            font-size: 18px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visuallab | Edilma Tavares</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a0a0a;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 20px;
+      margin-bottom: 30px;
+      object-fit: cover;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+    .destaque {
+      color: #a855f7;
+    }
+    p {
+      color: #9ca3af;
+      font-size: 16px;
+      margin-bottom: 30px;
+      max-width: 350px;
+    }
+    .card {
+      background: #1f1f1f;
+      border: 1px solid #a855f7;
+      border-radius: 16px;
+      padding: 24px;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 14px;
+      background: #0a0a0a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      color: #fff;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    .btn {
+      width: 100%;
+      padding: 16px;
+      background: #a855f7;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .btn-zap {
+      background: #25D366;
+    }
+    .info {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      max-width: 400px;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #6b7280;
+    }
+    .info div { text-align: center; }
+    .info strong { 
+      display: block; 
+      color: #fff; 
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+    footer {
+      margin-top: 40px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+    footer a { color: #a855f7; text-decoration: none; }
+  </style>
 </head>
 <body>
-    <img src="edilma.jpg" alt="Edilma Tavares" class="foto-perfil">
-    <h1>Edilma Tavares</h1>
-    <div class="cargo">VisualLab | Designer em Aliança-PE</div>
-    <p>Transformo marcas locais em referências. Identidade visual que conecta, emociona e vende de verdade.</p>
-    <a href="https://wa.me/5581991058649" class="btn">Falar no WhatsApp</a>
+  
+  <img src="COLOQUE_SUA_FOTO_AQUI" alt="Logo Visuallab" class="logo">
+
+  <h1>Transforme seu Instagram<br><span class="destaque">em 30 segundos</span></h1>
+  
+  <p>Descubra sua nota de impacto visual e receba um plano personalizado para atrair mais clientes em 7 dias</p>
+
+  <div class="card">
+    <input type="text" placeholder="@ seuinstagram" value="@tavares.edyh" readonly>
+    <a href="https://wa.me/5581991058649?text=Olá! Quero analisar meu Instagram com o Visuallab" class="btn">
+      Analisar meu perfil grátis →
+    </a>
+    <a href="https://wa.me/5581991058649" class="btn btn-zap">
+      Falar no WhatsApp
+    </a>
+  </div>
+
+  <div class="info">
+    <div><strong>100%</strong>Seguro</div>
+    <div><strong>30s</strong>Análise</div>
+    <div><strong>Grátis</strong>Sem senha</div>
+  </div>
+
+  <footer>
+    © 2024 Visuallab | <a href="https://instagram.com/tavares.edyh">@tavares.edyh</a>
+  </footer>
+
 </body>
 </html>
